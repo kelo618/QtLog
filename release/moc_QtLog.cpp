@@ -39,9 +39,7 @@ constexpr auto qt_meta_stringdata_CLASSQtLogENDCLASS = QtMocHelpers::stringData(
     "logMessage",
     "",
     "message",
-    "QwtLogger::LogLevel",
     "level",
-    "QwtLogger::OutputOption",
     "outputOption"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -66,7 +64,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSQtLogENDCLASS[] = {
        1,    3,   20,    2, 0x06,    1 /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString, 0x80000000 | 4, 0x80000000 | 6,    3,    5,    7,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int, QMetaType::Int,    3,    4,    5,
 
        0        // eod
 };
@@ -83,8 +81,8 @@ Q_CONSTINIT const QMetaObject QtLog::staticMetaObject = { {
         // method 'logMessage'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QwtLogger::LogLevel, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QwtLogger::OutputOption, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -95,13 +93,13 @@ void QtLog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         auto *_t = static_cast<QtLog *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->logMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QwtLogger::LogLevel>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QwtLogger::OutputOption>>(_a[3]))); break;
+        case 0: _t->logMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (QtLog::*)(const QString & , QwtLogger::LogLevel , QwtLogger::OutputOption );
+            using _t = void (QtLog::*)(const QString & , int , int );
             if (_t _q_method = &QtLog::logMessage; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
@@ -141,7 +139,7 @@ int QtLog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void QtLog::logMessage(const QString & _t1, QwtLogger::LogLevel _t2, QwtLogger::OutputOption _t3)
+void QtLog::logMessage(const QString & _t1, int _t2, int _t3)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

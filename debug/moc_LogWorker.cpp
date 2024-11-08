@@ -39,9 +39,7 @@ constexpr auto qt_meta_stringdata_CLASSLogWorkerENDCLASS = QtMocHelpers::stringD
     "processLog",
     "",
     "message",
-    "QwtLogger::LogLevel",
     "level",
-    "QwtLogger::OutputOption",
     "outputOption"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -66,7 +64,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLogWorkerENDCLASS[] = {
        1,    3,   20,    2, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString, 0x80000000 | 4, 0x80000000 | 6,    3,    5,    7,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int, QMetaType::Int,    3,    4,    5,
 
        0        // eod
 };
@@ -83,8 +81,8 @@ Q_CONSTINIT const QMetaObject LogWorker::staticMetaObject = { {
         // method 'processLog'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QwtLogger::LogLevel, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QwtLogger::OutputOption, std::false_type>
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>
     >,
     nullptr
 } };
@@ -95,7 +93,7 @@ void LogWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         auto *_t = static_cast<LogWorker *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->processLog((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QwtLogger::LogLevel>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QwtLogger::OutputOption>>(_a[3]))); break;
+        case 0: _t->processLog((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[3]))); break;
         default: ;
         }
     }

@@ -17,7 +17,7 @@ LogWorker::~LogWorker() {
     if (logFile.isOpen()) logFile.close();
 }
 ///
-/// \brief LogWorker::processLog
+/// \brief 处理日志信息
 /// \param message
 /// \param level
 /// \param outputOption
