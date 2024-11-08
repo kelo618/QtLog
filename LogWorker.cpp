@@ -22,7 +22,7 @@ LogWorker::~LogWorker() {
 /// \param level
 /// \param outputOption
 ///
-void LogWorker::processLog(const QString &message, QwtLogger::LogLevel level, QwtLogger::OutputOption outputOption) {
+void LogWorker::processLog(const QString &message, int level, int outputOption) {
     Q_UNUSED(level);
     if (outputOption == QwtLogger::FileOnly
         || outputOption == QwtLogger::FileAndConsole) {
