@@ -11,7 +11,7 @@ public:
 
     ~LogWorker();
 public slots:
-    void processLog(const QString &message, QwtLogger::LogLevel level, QwtLogger::OutputOption outputOption);
+    void processLog(const QString &message, int level, int outputOption);
 
 private:
     QFile logFile;
