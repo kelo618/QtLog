@@ -53,7 +53,7 @@ private:
 
 Q_SIGNALS:
 signals:
-    void logMessage(const QString &message, QwtLogger::LogLevel level, QwtLogger::OutputOption outputOption);
+    void logMessage(const QString &message, int level, int outputOption);
 
 private:
     QFile logFile;                                              // 日志文件对象
