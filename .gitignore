@@ -1,0 +1,37 @@
+# Qt build outputs
+/bin/
+/debug/
+/release/
+/lib/
+/include/
+/Makefile
+/Makefile.Debug
+/Makefile.Release
+**/Makefile
+**/Makefile.Debug
+**/Makefile.Release
+/.qmake.stash
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.pdb
+*.res
+**/debug/
+**/release/
+moc_*.cpp
+moc_*.obj
+qrc_*.cpp
+ui_*.h
+
+# IDE/user files
+*.pro.user
+*.pro.user.*
+/.qtc_clangd/
+**/.qtc_clangd/
+/.qtcreator/
+**/.qtcreator/
+target_wrapper.bat
