@@ -1,37 +1,10 @@
-# Qt build outputs
-/bin/
-/debug/
-/release/
-/lib/
-/include/
-/Makefile
-/Makefile.Debug
-/Makefile.Release
-**/Makefile
-**/Makefile.Debug
-**/Makefile.Release
-/.qmake.stash
-*.obj
+# 本地编译产物与 IDE 缓存不属于源码仓库。
 *.o
+*.obj
 *.exe
 *.dll
+*.a
 *.lib
-*.exp
-*.ilk
-*.pdb
-*.res
-**/debug/
-**/release/
-moc_*.cpp
-moc_*.obj
-qrc_*.cpp
-ui_*.h
-
-# IDE/user files
-*.pro.user
-*.pro.user.*
-/.qtc_clangd/
-**/.qtc_clangd/
-/.qtcreator/
-**/.qtcreator/
-target_wrapper.bat
+*.pro.user*
+.qtc_clangd/
+.qtcreator/
